@@ -1,0 +1,21 @@
+<h1>Aplicación héroe</h1>
+
+<dl>
+  <td>Nombre:</td>
+  <dd> {{nombre}} </dd>
+  <td>Edad:</td>
+  <dd> {{edad}} </dd>
+  <td>Función:</td>
+  <dd> {{nombre+" - "+edad.toString()}} </dd>
+  <td>Capitalizado:</td>
+  <dd> {{nombre.toLocaleUpperCase()}} </dd>
+</dl>
+<button (click)="cnom()" >
+  Cambiar Héroe
+</button>
+<button (click)="cedad()" >
+  Cambiar Edad
+</button>
+
+
+

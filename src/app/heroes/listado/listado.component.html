@@ -1,0 +1,19 @@
+<p>listado de heroes!</p>
+
+<div *ngIf="caido != '' && caido != undefined">
+  <h3>Héroe caido: {{caido}} </h3>
+</div>
+<div *ngIf="caido === ''">
+  <h3>Ningun héroe a caído </h3>
+</div>
+<div *ngIf="caido === undefined">
+  <h3>Todos calleron :( </h3>
+</div>
+
+<button (click)="borrar()">Borrar heroe</button>
+
+<ul>
+  <li *ngFor="let heroe of heroes;let i = index" >
+    Héroe número {{i+1}}: {{heroe}}
+  </li>
+</ul>
